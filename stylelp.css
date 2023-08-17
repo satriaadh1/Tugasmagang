@@ -137,7 +137,7 @@ header .conten p{
     text-align: center;
   }
   
-  /* Gaya tautan dalam section "conten" */
+  /* Style Button */
   .conten a {
     display: inline-block;
     padding: 10px 20px;
@@ -152,7 +152,7 @@ header .conten p{
     margin-top: 15px;
   }
   
-  /* Efek hover pada tautan */
+  /* Efek saat di sentuh */
   .conten a:hover {
     background-color: #00ff9d;
     color: #ffffff;
