@@ -19,6 +19,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: relative;
 }
 
 .navigation{
@@ -69,13 +70,14 @@ header{
     .navigation .box-navigation .box:nth-child(2) {
         display: flex;
         position: absolute;
-        top: 70px;
+        top: 50px;
         right: 40px;
         background-color: white;
-        width: 150px;
+        width: 100px;
         border-radius: 10px;
         opacity: 0;
         transition: all.3s ease;
+        font-size: 12px;
     }
     .navigation .box-navigation .menu-navigation.menu-active{
         opacity: 1;
@@ -93,22 +95,18 @@ header{
         color: black;
     }
     .navigation .box-navigation .box:nth-child(2) ul li{
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         margin-left: 20%;
         display: flex;
         align-items: center;
     }
     .navigation .box-navigation .box:nth-child(2) ul li i{
-        margin-inline: 10px;
-        font-size: 18px;
+        margin-inline: 5px;
+        font-size: 12px;
     }
     .navigation .box-navigation .box:nth-child(3) i{
         font-size: 26px;
-    }
-    
-    header .conten h1{
-        font-size: 28px;
     }
 }
 
@@ -128,7 +126,7 @@ header .conten h1 {
 }
 header .conten p{
     color: whitesmoke;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
 } 
 /* Gaya konten */
@@ -161,12 +159,28 @@ header .conten p{
     transition: all.5s ease;
   }
   
-@media screen and (max-width:760) {
+@media screen and (max-width:780px) {
     header .conten h1{
-        font-size: 20px;
+        font-size: 24px;
+        text-align: center;
     }
+    header .conten p{
+        font-size: 12px;
+    }
+    .conten a {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #ffffff;
+        color: #00ff9d;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        font-size: 8px;
+        margin-top: 15px;
+      }
 }
-/* ... (previous styles) ... */
 
 .features {
     background: linear-gradient(to bottom, #3f8f57, #7cba5d);
@@ -204,9 +218,16 @@ header .conten p{
     margin-top: 10px;
     color: whitesmoke;
 }
-/* ... (previous styles) ... */
+@media screen and (max-width:780px) {
+    .feature img {
+        max-width: 80%;
+        height: auto;
+    }
+        
+}
 
 .fiturlain {
+    align-items: center;
     padding: 40px;
     text-align: center;
     background-attachment: fixed;
@@ -229,7 +250,6 @@ header .conten p{
 
 .fitur-lainnya i {
     font-size: 24px;
-    margin-right: 10px;
     color: #004427;
 }
 
